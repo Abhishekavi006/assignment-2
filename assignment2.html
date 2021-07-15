@@ -4,81 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa De Jersey</title>
+    <title>EURO 2021</title>
     <link rel="stylesheet" href="assignment2.css">
-    <script src="assignment2.js"></script>
 </head>
 <body>
-    <div class="full-page">
-        <div class="navbar">
-            <div>
-                <a href="http://assignment-2.html">Casa De Jersey</a>
-            </div>     
-            
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'">Login</button></li>
+    <section>
+        <div class="big-pic">
+
+            <div class="navbar">
+                <div>
+                    <a href="http://assignment-2.html" class="first-left">EURO 2021</a>
+                </div>     
+                
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><button class="loginbtn">Login</button></li>
 
 
-                    </ul>
-                </nav>
-               
-        </div>    
-        <div id="login-form" class="login-page">
-            <div class="form-box">
-                <div class="button-box">
-                    <div id="btn"></div>
-                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
-                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
-                </div>
-                <form id="login" class="input-group-login">
-                    <input type="text" class="input-field" placeholder="Email Id" required>
-                    <input type="password" class="input-field" placeholder="Enter Password" required>
-                    <input type="checkbox" class="check-box"><span>Remember Password</span>
-                    <button type="submit" class="submit-btn">Log in</button>
-                </form>
-                <form id="register" class="input-group-register">
-                    <input type="text" class="input-field" placeholder="First Name" required>
-                    <input type="text" class="input-field" placeholder="Last Name" required>
-                    <input type="email" class="input-field" placeholder="Email Id" required>
-                    <input type="password" class="input-field" placeholder="Enter Password" required>
-                    <input type="password" class="input-field" placeholder="Confirm Password" required>
-                    <input type="checkbox" class="check-box"><span>I agree to the terms and Conditions</span>
-                    <button type="submit" class="submit-btn">Register</button>
-                </form>
+                        </ul>
+                    </nav>
+
+            </div>
+                <h1>EURO 2021 BEST MOMENTS</h1>
+            </div>    
+    </section>        
+
+    <section id="players">
+        <div class="container">
+            <div class="gallery">
+                <img src="players/puig.jpeg" alt="" >
+                    <h3>Riqui Puig</h3>
+                    <div class="desc">Riqui Puig will be the best attacking midfielder in future</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/pedri.jpg" alt="" >
+                    <h3>Pedri</h3>
+                    <div class="desc">Pedri is the best midfielder in the world</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/fati.jpg" alt="">
+                    <h3>Ansu Fati</h3>
+                    <div class="desc">Ansu Fati is the best forward in Spain</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/olmo.jpg" alt="">
+                    <h3>Dami Olmo</h3>
+                    <div class="desc">Dani Olmo is the best dribbler in Leipzig</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/pau.jpg" alt="">
+                    <h3>Pau Torres</h3>
+                    <div class="desc">Pau Torres is the best young defender</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/laporta.webp" alt="">
+                    <h3>Laporte</h3>
+                    <div class="desc">Laporte is the best destructive defender in modern era</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/lorente.jpg" alt="">
+                    <h3>Lorente</h3>
+                    <div class="desc">Lorente is the best physical midfielder now</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/torres.jpg" alt="">
+                    <h3>Ferran Torres</h3>
+                    <div class="desc">Ferran Torres will be the superstar</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/rodri.jpg" alt="">
+                    <h3>Rodri</h3>
+                    <div class="desc">Rodri is the best left footed defensive midfielder right now</div>
+            </div>
+            <div class="gallery">
+                <img src="players/garcia.jpg" alt="">
+                    <h3>Neymar Jr</h3>
+                    <div class="desc">Eric Garcia is the best ball playing center back right now</div>
+            </div>
+
+            <div class="gallery">
+                <img src="players/collado.jpg" alt="">
+                    <h3>Collado</h3>
+                    <div class="desc">Alex Collado is the best winger in future</div>
+            </div>
+            <div class="gallery">
+                <img src="players/mingueza.jpg" alt="">
+                    <h3>Mingueza</h3>
+                    <div class="desc">Mingueza will be the best defender in future.</div>
             </div>
         </div>
-    </div>
-    <script>
-        var x=document.getElementById('login');
-var y=document.getElementById('register');
-var z=document.getElementById('btn');
-    function register()
-    {
-        x.style.left='-400px';
-        y.style.left='50px';
-        z.style.left='110px';
-    }
-    function login()
-    {
-        x.style.left='50px';
-        y.style.left='400px';
-        z.style.left='0px'; 
-}
-    </script>
-    <script>
-        var modal = document.getElementById('login-form');
-window.onclick = function(event)
-{
-    if (event.target == modal)
-    {
-        modal.style.display ="none";
-    }
-}
-    </script>
+    </section>
+    <section class="last-part">
+        <div class="left-side">
+            <div class="moments">
+                <h4>The Best Moments in EURO-2021</h4>
+                <p id="winner">Italy wins the EURO-2021.Italy beat England in final by penalty shootout.They also beat Spain in Semifinal through penalty shootout.</p>
+
+            </div>
+            
+            <button class="f-btn">Click Here</button>
+
+            
+        </div>
+        <div class="right-side">
+            <img src="players/aa.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="logo">
+                <img src="players/Logo.png" alt="" height="40px" width="120px">
+            </div>
+            <div class="media-logo">
+                <ul id="social-media">
+                            <li><a href="www.youtube.com" target="_blank"><img src="players/Youtube.png" alt=""></a></li>
+                            <li><a href="www.twitter.com" target="_blank"><img src="players/Twitter.png" alt=""></a></li>
+                            <li><a href="www.instagram.com" target="_blank"><img src="players/Instagram.png" alt=""></a></li>
+                            <li><a href="www.dribble.com" target="_blank"><img src="players/Dribbble.png" alt=""></a></li>
+                </ul>            
+            </div>
+            <div>
+                <p>Copyright © EURO-2021</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
